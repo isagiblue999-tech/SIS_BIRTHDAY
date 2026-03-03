@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sister - Surprise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="transition-overlay"></div>
+    
+    <audio id="bg-music" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3?filename=happy-birthday-to-you-bossa-nova-11134.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle" class="glass-btn">🎵 Play</button>
+
+    <main id="content" data-page="surprise">
+        <section class="surprise-section">
+            <div class="cake-container">
+                <div class="cake-wrapper">
+                    <div class="candle-wrapper">
+                        <div class="flame" id="candle-flame"></div>
+                        <div class="candle"></div>
+                    </div>
+                    <div class="cake">🎂</div>
+                </div>
+            </div>
+            <h2 class="final-message">Happy Birthday!</h2>
+            <p class="instruction-text" id="camera-instruction">Getting ready...</p>
+            <div class="camera-container">
+                <video id="webcam" autoplay playsinline></video>
+            </div>
+            <button id="surprise-btn" class="glass-btn glow-effect hidden">Click for Surprise</button>
+            
+            <div class="popup-message glass-panel hidden">
+                <h3>You are the best sister ever ❤️</h3>
+                <p>Wishing you all the happiness, success, and love in the world. Enjoy your special day!</p>
+                <button id="close-popup" class="glass-btn" style="margin-top: 20px;">Close</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sister - Story</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="transition-overlay"></div>
+    
+    <audio id="bg-music" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3?filename=happy-birthday-to-you-bossa-nova-11134.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle" class="glass-btn">🎵 Play</button>
+
+    <main id="content" data-page="story">
+        <section class="story-section">
+            <h2 class="section-title">Our Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Childhood</h3>
+                        <p>Where it all began. The best days of our lives playing together and creating our own little world.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Funny Moments</h3>
+                        <p>All those times we laughed until our stomachs hurt over inside jokes nobody else understood.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>School Days</h3>
+                        <p>Growing up, learning, and always having each other's back through the tough times.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Memories Together</h3>
+                        <p>Trips, holidays, and unforgettable adventures that I will cherish forever.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Special Moments</h3>
+                        <p>Today, celebrating you and the amazing person you have become. I'm so proud of you.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="./surprise.html" class="next-page-btn glass-btn glow-effect">The Surprise ➔</a>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

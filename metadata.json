@@ -1,0 +1,7 @@
+{
+  "name": "Happy Birthday Sister",
+  "description": "A premium, cinematic, and modern birthday website for my sister.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
